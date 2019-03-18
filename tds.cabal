@@ -23,22 +23,22 @@ library
                        Database.TDS.Proto
                        Database.TDS.Proto.Errors
 
-  build-depends:       base       >= 4.7 && < 5,
-                       bytestring >=0.10 && <0.11,
-                       mtl        >=2.2  && <2.3,
-                       text       >=1.2  && <1.3,
-                       stm,
-                       transformers >=0.5 && <0.6,
-                       network,
-                       tardis     >=0.4  && <0.5,
-                       unix,
-                       streaming,
-                       streaming-attoparsec,
-                       streaming-bytestring,
-                       attoparsec,
-                       attoparsec-binary,
-                       hostname,
-                       vector
+  build-depends:       base                 >=4.7  && < 5,
+                       bytestring           >=0.10 && <0.11,
+                       mtl                  >=2.2  && <2.3,
+                       text                 >=1.2  && <1.3,
+                       stm                  >=2.0  && <2.6,
+                       transformers         >=0.5  && <0.6,
+                       network              >=2.8  && <2.9,
+                       tardis               >=0.4  && <0.5,
+                       unix                 >=2.7  && <2.8,
+                       streaming            >=0.2  && <0.3,
+                       streaming-attoparsec >=1.0  && <1.1,
+                       streaming-bytestring >=0.1  && <0.2,
+                       attoparsec           >=0.13 && <0.14,
+                       attoparsec-binary    >=0.2  && <0.3,
+                       hostname             >=1.0  && <1.1,
+                       vector               >=0.11 && <0.13
   default-language:    Haskell2010
   ghc-options:         -O2
 
