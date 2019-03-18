@@ -1,0 +1,7 @@
+resolver: lts-13.6
+packages:
+  - beam-mssql
+  - tds
+extra-deps:
+  - streaming-attoparsec-1.0.0
+  - ../beam/beam-core
