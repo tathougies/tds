@@ -106,7 +106,7 @@ data PacketType (sender :: Sender) (resp :: ResponseInfo *) (d :: *) where
 
   Login7        :: PacketType 'Client ('ExpectsResponse ('ResponseType 'False Login7Ack)) Login7
 
-  SQLBatch      :: PacketType 'Client ('ExpectsResponse ('ResponseType 'False RowResults)) T.Text
+  SQLBatch      :: PacketType 'Client ('ExpectsResponse ('ResponseType 'True RowResults)) T.Text
   BulkLoad      :: PacketType 'Client 'NoResponse Unimplemented
   RPC           :: PacketType 'Client 'NoResponse Unimplemented
 
