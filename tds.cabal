@@ -1,7 +1,10 @@
 name:                tds
 version:             0.1.0.0
 synopsis:            Pure Haskell TDS protocol implementation. Mainly for beam-mssql and beam-sybase
--- description:
+description:
+  This is a work in progress! Please report bugs on github
+
+  Low-level Haskell TDS implementation
 homepage:            https://github.com/tathougies/beam-tds#readme
 license:             MIT
 license-file:        LICENSE
@@ -44,7 +47,7 @@ library
 
 executable test
   build-depends:       base >=4.7 && <5,
-                       tds ==0.1.0.0
+                       tds
   hs-source-dirs:      src
   main-is:             Test.hs
   default-language:    Haskell2010
